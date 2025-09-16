@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anirudh Reddy · Data/BI Portfolio</title>
+  <meta name="description" content="Portfolio of Anirudh Reddy — Data Engineer & BI Developer. Power BI, Azure, SQL, Python, and Data Modeling projects." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fff;
+      --card:#ffffff;
+      --text:#111827;
+      --muted:#6b7280;
+      --brand:#ef4444;
+      --chip:#fde7e7;
+      --chip-text:#7f1d1d;
+      --ring:rgba(239,68,68,.35);
+      --border:#f1f5f9;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg:#0b0f19;
+        --card:#0f1524;
+        --text:#e5e7eb;
+        --muted:#a1a1aa;
+        --brand:#f97316;
+        --chip:#1f2937;
+        --chip-text:#e5e7eb;
+        --ring:rgba(249,115,22,.35);
+        --border:#1f2937;
+      }
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:var(--bg);color:var(--text);}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:0 20px}
+    .topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.75);backdrop-filter:saturate(150%) blur(10px);border-bottom:1px solid var(--border)}
+    @media (prefers-color-scheme: dark){.topbar{background:rgba(11,15,25,.6)}}
+    nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .nav-links{display:flex;gap:18px}
+    .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);padding:10px 14px;border-radius:12px;background:var(--card)}
+    .btn:hover{box-shadow:0 0 0 3px var(--ring)}
+    .hero{display:grid;grid-template-columns:110px 1fr;gap:20px;align-items:center;padding:32px 0 12px}
+    .avatar{width:96px;height:96px;border-radius:50%;border:3px solid var(--border);object-fit:cover}
+    h1{font-size:28px;margin:0}
+    .role{color:var(--muted);font-weight:600}
+    .section{padding:28px 0}
+    .section h2{font-size:22px;margin:0 0 14px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px}
+    .about{line-height:1.7;color:var(--text)}
+    .chips{display:flex;flex-wrap:wrap;gap:10px}
+    .chip{background:var(--chip);color:var(--chip-text);padding:8px 12px;border-radius:999px;font-size:13px;font-weight:600;border:1px solid var(--border)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    @media (max-width:990px){.grid{grid-template-columns:repeat(2,1fr)}.hero{grid-template-columns:80px 1fr}}
+    @media (max-width:640px){.grid{grid-template-columns:1fr}.nav-links{display:none}}
+    .project{display:flex;flex-direction:column;gap:10px}
+    .thumb{aspect-ratio:16/10;background:#f3f4f6;border:1px solid var(--border);border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center}
+    .thumb img{width:100%;height:100%;object-fit:cover}
+    .project h3{font-size:16px;margin:0}
+    .project p{font-size:13px;color:var(--muted);margin:0}
+    .footer{padding:40px 0 60px;color:var(--muted);text-align:center}
+    .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+    .filter{cursor:pointer;border:1px solid var(--border);padding:6px 10px;border-radius:10px;background:var(--card);font-size:13px}
+    .filter.active{outline:3px solid var(--ring)}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <nav>
+        <a href="#top" style="font-weight:800">Anirudh<span style="color:var(--brand)">.</span></a>
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#work">Portfolio</a>
+          <a href="#contact">Contact</a>
+          <a class="btn" href="./assets/Anirudh_Reddy_Resume.pdf" download>Download Resume</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top" class="container">
+    <section id="about" class="section">
+      <div class="hero">
+        <img class="avatar" src="https://avatars.githubusercontent.com/u/9919?s=200&v=4" alt="Avatar"/>
+        <div>
+          <h1>Anirudh Reddy</h1>
+          <div class="role">Senior BI / Data Engineer</div>
+        </div>
+      </div>
+      <div class="card about">
+        I'm a Data/BI developer focused on turning complex data into clean visuals and decisions. I work with Power BI, SQL, Python, and Azure (ADF, Synapse, Databricks). I enjoy building intuitive dashboards, reliable pipelines, and teaching teams the craft of good data storytelling.
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="card">
+        <div class="chips">
+          <span class="chip">Power BI</span>
+          <span class="chip">DAX</span>
+          <span class="chip">Power Query</span>
+          <span class="chip">SQL</span>
+          <span class="chip">Python</span>
+          <span class="chip">Azure (ADF, Synapse)</span>
+          <span class="chip">Databricks</span>
+          <span class="chip">Data Modeling</span>
+          <span class="chip">Snowflake</span>
+          <span class="chip">Excel</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:12px">
+        <h2 style="margin:0">Portfolio Work</h2>
+        <div class="filters" aria-label="Project filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="bi">BI</button>
+          <button class="filter" data-filter="etl">ETL</button>
+          <button class="filter" data-filter="python">Python</button>
+        </div>
+      </div>
+      <div class="grid" id="projects">
+        <article class="card project" data-tags="bi">
+          <a class="thumb" href="#">
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=1200&auto=format&fit=crop" alt="Railway signage dashboard"/>
+          </a>
+          <h3>Improving Railway Signage Boards</h3>
+          <p>Enhanced tool readability using Power BI best practices.</p>
+        </article>
+
+        <article class="card project" data-tags="bi">
+          <a class="thumb" href="#">
+            <img src="https://images.unsplash.com/photo-1543286386-2e659306cd6c?q=80&w=1200&auto=format&fit=crop" alt="Tour de France infographic"/>
+          </a>
+          <h3>Tour de France Infographic</h3>
+          <p>Race analytics competition submission with interactive visuals.</p>
+        </article>
+
+        <article class="card project" data-tags="bi etl">
+          <a class="thumb" href="#">
+            <img src="https://images.unsplash.com/photo-1517148815978-75f6acaaf32c?q=80&w=1200&auto=format&fit=crop" alt="Gerard Duggan KPI"/>
+          </a>
+          <h3>Gerard Duggan KPI</h3>
+          <p>Power BI visualizations with robust DAX modeling.</p>
+        </article>
+
+        <article class="card project" data-tags="etl bi">
+          <a class="thumb" href="#">
+            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=1200&auto=format&fit=crop" alt="Adventure Works Snowflake"/>
+          </a>
+          <h3>Adventure Works × Snowflake</h3>
+          <p>Snowflake and Power BI integration for business analytics.</p>
+        </article>
+
+        <article class="card project" data-tags="bi">
+          <a class="thumb" href="#">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="COVID-19 Dashboard"/>
+          </a>
+          <h3>COVID‑19 Dashboard</h3>
+          <p>Analytics of 2020 COVID‑19 dataset with interactive visuals.</p>
+        </article>
+
+        <article class="card project" data-tags="python">
+          <a class="thumb" href="#">
+            <img src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1200&auto=format&fit=crop" alt="PM Modi speech word cloud"/>
+          </a>
+          <h3>PM Modi Speech — Word Cloud</h3>
+          <p>Text mining and word cloud generation using PySpark.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="articles" class="section">
+      <h2>Articles</h2>
+      <div class="grid">
+        <article class="card project">
+          <h3>Optimizing Star Schemas for Power BI</h3>
+          <p>Dimensional modeling tricks that keep your reports fast and flexible.</p>
+        </article>
+        <article class="card project">
+          <h3>From Excel to Power Query: A Gentle Upgrade Path</h3>
+          <p>Pragmatic steps to move from spreadsheets to governed data prep.</p>
+        </article>
+        <article class="card project">
+          <h3>Prototyping ETL in Python before ADF</h3>
+          <p>Why starting with notebooks can reduce rework later in the pipeline.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <div class="card" style="display:flex;gap:14px;flex-wrap:wrap">
+        <a class="btn" href="mailto:hello@example.com" aria-label="Email">📧 Email</a>
+        <a class="btn" href="https://www.linkedin.com" target="_blank" rel="noreferrer">🔗 LinkedIn</a>
+        <a class="btn" href="https://github.com" target="_blank" rel="noreferrer">🐙 GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © <span id="year"></span> Anirudh Reddy — Built with vanilla HTML/CSS/JS · Hosted on GitHub Pages
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click',e=>{const href=a.getAttribute('href'); if(href.length>1){e.preventDefault();document.querySelector(href).scrollIntoView({behavior:'smooth'});} });
+    });
+    const buttons=[...document.querySelectorAll('.filter')];
+    const cards=[...document.querySelectorAll('#projects .project')];
+    buttons.forEach(b=>b.addEventListener('click',()=>{
+      buttons.forEach(x=>x.classList.remove('active')); b.classList.add('active');
+      const tag=b.dataset.filter; cards.forEach(c=>{
+        if(tag==='all'||c.dataset.tags.includes(tag)){c.style.display='flex'}else{c.style.display='none'}
+      });
+    }));
+  </script>
+</body>
+</html>
